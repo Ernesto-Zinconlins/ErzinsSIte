@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erzins Technologies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Erzins Technologies</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>About Erzins Technologies</h2>
+        <p>Erzins Technologies is a leading provider of innovative technology solutions. We specialize in delivering high-quality services to help businesses achieve their goals.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Founded in 2021, Erzins Technologies has been at the forefront of technological innovation. Our team of experts is dedicated to providing top-notch services to our clients.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Mobile App Development</li>
+            <li>Cloud Solutions</li>
+            <li>IT Consulting</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>You can reach us at:</p>
+        <p>Email: erzinstechnologies@gmail.com</p>
+        <p>Phone: +233 552502717</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Erzins Technologies. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    // Example interactive feature: Scroll to section when nav link is clicked
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+    </script>
+</body>
+</html>
